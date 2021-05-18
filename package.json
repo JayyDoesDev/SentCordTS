@@ -1,5 +1,5 @@
 {
-  "name": "sentcordts",
+  "name": "sentcordts-lite",
   "version": "1.0.0",
   "main": "src/Client.ts",
   "author": "Jdevdisc <69683068+JDevelo@users.noreply.github.com>",
@@ -15,5 +15,6 @@
   "dependencies": {
     "@types/node": "^15.3.0",
     "node-fetch": "^2.6.1"
-  }
+  },
+  "keywords": ["discordbot", "listdiscord", "bot list", "sentcord"]
 }

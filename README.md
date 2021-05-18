@@ -1,9 +1,9 @@
-# SentCordTS
- SentCordJS is an api wrapper for sentcord to help you post your server/shard stats easily. (TypeScript)
+# SentCordTS-lite
+ SentCordTS-lite is an api wrapper for sentcord to help you post your server/shard stats easily. (TypeScript)
 
  ## Setup
  ```typescript
-import sentcordTS from "sentcordts";
+import sentcordTS from "sentcordts-lite";
 const key = ''
 const client: sentcordTS = new sentcordTS({
     apikey: key,
