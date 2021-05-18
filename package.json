@@ -16,5 +16,8 @@
     "@types/node": "^15.3.0",
     "node-fetch": "^2.6.1"
   },
-  "keywords": ["discordbot", "listdiscord", "bot list", "sentcord"]
+  "keywords": ["discordbot", "listdiscord", "bot list", "sentcord"],
+  "repository": {
+    "url": "https://github.com/JDevelo/SentCordTS"
+  }
 }
