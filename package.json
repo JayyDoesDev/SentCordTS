@@ -4,6 +4,7 @@
   "main": "src/Client.ts",
   "author": "Jdevdisc <69683068+JDevelo@users.noreply.github.com>",
   "license": "MIT",
+  "types": "dist/Client.d.ts",
   "scripts": {
     "build": "tsc",
     "start": "ts-node src/Client.ts"
