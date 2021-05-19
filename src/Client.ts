@@ -14,10 +14,10 @@ export default class sentcordTS {
     /**
      * base
      */
-    public base: 'https://sentcord.com/api/bot/'
+  //  public base: 'https://sentcord.com/api/bot/'
     constructor(ops = {
         apikey: null,
-        botid: null
+        botid: null as any
     }) {
         this.botid = ops.botid
         this.apikey = ops.apikey

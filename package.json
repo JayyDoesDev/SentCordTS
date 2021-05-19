@@ -5,6 +5,7 @@
   "author": "Jdevdisc <69683068+JDevelo@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
+    "build": "tsc",
     "start": "ts-node src/Client.ts"
   },
   "devDependencies": {
@@ -22,7 +23,5 @@
     "bot list",
     "sentcord"
   ],
-  "repository": {
-    "url": "https://github.com/JDevelo/SentCordTS"
-  }
+  "repository": "https://github.com/JDevelo/SentCordTS"
 }
