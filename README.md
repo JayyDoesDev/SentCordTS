@@ -1,7 +1,7 @@
 # SentCordTS-lite
  SentCordTS-lite is an api wrapper for sentcord to help you post your server/shard stats easily. (TypeScript)
 
- ## Setup
+ ## TypeScript Setup
  ```typescript
 import sentcordTS from "sentcordts-lite";
 const key = ''
@@ -12,6 +12,7 @@ const client: sentcordTS = new sentcordTS({
 client.stats('botid', 'servercount', 'shardcount')
 ```
 
+## JavaScript Setup
 ```javascript
 const { sentcordTS } = require('sentcordts-lite')
 const key = ''
