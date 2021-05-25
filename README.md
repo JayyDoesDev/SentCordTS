@@ -20,3 +20,4 @@ const client = new sentcordTS({
     botid: 'botid'
 })
 client.stats('botid', 'servercount', 'shardcount')
+```
