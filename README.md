@@ -11,3 +11,12 @@ const client: sentcordTS = new sentcordTS({
 })
 client.stats('botid', 'servercount', 'shardcount')
 ```
+
+```javascript
+const { sentcordTS } = require('sentcordts-lite')
+const key = ''
+const client = new sentcordTS({
+    apikey: key,
+    botid: 'botid'
+})
+client.stats('botid', 'servercount', 'shardcount')
