@@ -1,7 +1,7 @@
 {
   "name": "sentcordts-lite",
-  "version": "1.1.8",
-  "main": "src/index.js",
+  "version": "1.1.9",
+  "main": "dist/index.js",
   "author": "Jdevdisc <69683068+JDevelo@users.noreply.github.com>",
   "license": "MIT",
   "types": "dist/index.d.ts",
