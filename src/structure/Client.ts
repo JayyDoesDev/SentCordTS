@@ -1,9 +1,9 @@
 export default class sentcordTS {
-    public fetch;
+    private fetch;
     public apikey: null;
-    public _apikey: any;
+    private _apikey: any;
     public botid: string;
-    public _stats;
+    private _stats;
     constructor(ops = {
         apikey: null as any,
         botid: null as any
