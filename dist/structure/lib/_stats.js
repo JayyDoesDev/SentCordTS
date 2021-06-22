@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 module.exports = (_botid, _servers, _shards, _apikey) => __awaiter(void 0, void 0, void 0, function* () {
-    const verison = require('../../../src/structure/lib/json/version.json');
+    const verison = require('./json/version.json');
     const fetch = require('node-fetch');
     if (!_apikey)
         throw new ReferenceError('In order to post your stats you need to pass in your API key. To access the api key do command ..apikey in the support server.');
