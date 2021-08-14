@@ -14,14 +14,13 @@ class sentcordTS {
             throw new ReferenceError('In order to post your stats you need to pass in your API key. To access the api key do command ..apikey in the support server.');
         if (!botid)
             throw new ReferenceError('In order to post your stats you need to pass in your bot id.');
-        this.fetch(`https://api.sixaiy.com/v2/sentcord`, {
+        this.fetch(`https://sentcord.com/api/bot/${botid}`, {
             method: 'POST',
             headers: {
                 'Authorization': this.apikey,
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                id: botid,
                 serverCount: servers,
                 shardCount: shards
             })

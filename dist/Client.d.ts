@@ -6,5 +6,5 @@ export default class sentcordTS {
         apikey: null;
         botid: any;
     });
-    stats(botid?: String, servers?: string, shards?: String): void;
+    stats(botid?: String, servers?: Number, shards?: Number): void;
 }

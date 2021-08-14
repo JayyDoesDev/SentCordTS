@@ -14,7 +14,7 @@ export default class sentcordTS {
     /**
      * base
      */
-  //  public base: 'https://api.sixaiy.com/v2/sentcord'
+    //  public base: 'https://sentcord.com/api/bot/:botid'
     constructor(ops = {
         apikey: null,
         botid: null as any
@@ -26,14 +26,13 @@ export default class sentcordTS {
     stats(botid?: String, servers?: string, shards?: String) {
         if(!this.apikey) throw new ReferenceError('In order to post your stats you need to pass in your API key. To access the api key do command ..apikey in the support server.')
         if(!botid) throw new ReferenceError('In order to post your stats you need to pass in your bot id.')
-        this.fetch(`https://api.sixaiy.com/v2/sentcord`, {
+        this.fetch(`https://sentcord.com/api/bot/${botid}`, {
             method: 'POST',
             headers: {
                 'Authorization': this.apikey,
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                id: botid,
                 serverCount: servers,
                 shardCount: shards
             })
