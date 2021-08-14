@@ -20,11 +20,11 @@ client.stats('botid', 'servercount', 'shardcount')
 ## JavaScript Setup
 ```javascript
 let
- { sentcordTS } = require('sentcordts-lite'),
- key = '',
- client = new sentcordTS({
-    apikey: key,
-    botid: 'botid'
-});
+    { sentcordTS } = require('sentcordts-lite'),
+    key = '',
+    client = new sentcordTS({
+        apikey: key,
+        botid: 'botid'
+    });
 client.stats('botid', 'servercount', 'shardcount')
 ```
