@@ -10,7 +10,7 @@ export class ServerRequest {
                 "Authorization": key,
                 "Content-Type" : "application/json",
                 body: JSON.stringify({
-                    serverCount: servers
+                    servers: servers
                 })
             }
         })
