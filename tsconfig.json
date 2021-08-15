@@ -1,25 +1,19 @@
 {
   "compilerOptions": {
-    "target": "ES6",
-    "module": "commonjs",
-    "declaration": true,
-    "outDir": "dist",
-    "rootDir": "src",
-    "strict": true,
-    "noImplicitAny": true,
-    "alwaysStrict": true,
-    "declarationMap": true,
-    "incremental": true,
-    "sourceMap": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "resolveJsonModule": true,
-    "removeComments": true,
+      "module": "commonjs",
+      "target": "ES2019",
+      "outDir": "dist",
+      "strict": true,
+      "declaration": true,
+      "declarationMap": true,
+      "esModuleInterop": true,
+      "incremental": true,
+      "sourceMap": true
   },
   "exclude": [
-    "dist"
+      "dist"
   ],
   "include": [
-    "src/**/**/*.ts"
-  ],
+      "src/**/**/*.ts"
+  ]
 }
