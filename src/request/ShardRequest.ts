@@ -11,7 +11,7 @@ export class ShardRequest {
                 "Authorization": key,
                 "Content-Type" : "application/json",
                 body: JSON.stringify({
-                    serverCount: shards
+                    servers: shards
                 })
             }
         })
