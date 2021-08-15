@@ -11,8 +11,8 @@ export class Request {
                 "Authorization": key,
                 "Content-Type" : "application/json",
                 body: JSON.stringify({
-                    serverCount: servers,
-                    shardCount: shards,
+                    servers: servers,
+                    shards: shards,
                 })
             }
         }).then((res => res.json())).then(data => {
