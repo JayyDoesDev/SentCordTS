@@ -1,4 +1,3 @@
-
 {
   "compilerOptions": {
     "target": "ES6",
@@ -9,14 +8,18 @@
     "strict": true,
     "noImplicitAny": true,
     "alwaysStrict": true,
-    "typeRoots": [
-      "node_modules/@types",
-      "src/typings"
-    ],
+    "declarationMap": true,
+    "incremental": true,
+    "sourceMap": true,
     "esModuleInterop": true,
-    "inlineSourceMap": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    "removeComments": true
-  }
+    "removeComments": true,
+  },
+  "exclude": [
+    "dist"
+  ],
+  "include": [
+    "src/**/**/*.ts"
+  ],
 }
