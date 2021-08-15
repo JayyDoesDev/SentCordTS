@@ -1,20 +1,29 @@
-export default class sentcordTS {
+import EventEmitter from "events";
+import { title, base } from './utils/util'
+import { ServerRequest, Request } from "../request";
+import fetch from "node-fetch";
+
+
+export class sentcord {
+    private apikey: string;
     private fetch;
-    private apikey: null;
-    private _apikey: any;
-    private botid: string;
-    private _stats;
     constructor(ops = {
-        apikey: null as any,
-        botid: null as any
+        apikey: null as unknown as string
     }) {
-        this.fetch = require('node-fetch')
-        this._apikey = this.apikey
         this.apikey = ops.apikey
-        this.botid = ops.botid
-        this._stats = require('../lib/_stats')
+        this.fetch = require('node-fetch')
     }
-    async stats(botid?: any, servers?: string, shards?: string) {
-        this._stats(botid, servers, shards)
+
+    public async PostStats(id: string, servers: number, shards: number): Promise<void | number> {
+        /**
+         * @typeof 
+         */
+        if (!id || typeof (id) !== "string") throw new ReferenceError(title + 'Bot ID must be a string.')
+        if (!servers || typeof (servers) !== "number") throw new ReferenceError(title + 'Server Count must be a number.')
+        if (!shards || typeof (shards) !== "number") throw new ReferenceError(title + 'Shard Count must be a number.')
+
+
+        const request = new Request()
+        request.get('POST', `/bot/${id}`, this.apikey, servers, shards) 
     }
 }

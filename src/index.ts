@@ -1,3 +1,2 @@
-import sentcordTS from "./structure/Client";
-
-export { sentcordTS }
+export * from './structure/Client'
+export * from './typings/Interfaces'
