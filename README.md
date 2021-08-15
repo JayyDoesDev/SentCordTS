@@ -11,7 +11,7 @@ client.PostStats('302857939910131712', 3000, 3)
 ```
 ## JavaScript Setup
 ```javascript
-const { sentcord } = require('sentcordts-lite')
+let { sentcord } = require('sentcordts-lite')
 const client = new sentcord({
     apikey: 'Key'
 })
