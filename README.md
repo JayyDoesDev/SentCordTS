@@ -3,22 +3,17 @@
 
  ## TypeScript Setup
  ```typescript
-import sentcordTS from "sentcordts-lite";
-const key = ''
-const client: sentcordTS = new sentcordTS({
-    apikey: key,
-    botid: 'botid'
+import sentcord from 'sentcordts-lite'
+const client: sentcord = new sentcord({
+    apikey: 'Key'
 })
-client.stats('botid', 'servercount', 'shardcount')
+client.PostStats('302857939910131712', 3000, 3)
 ```
-
 ## JavaScript Setup
 ```javascript
-const { sentcordTS } = require('sentcordts-lite')
-const key = ''
-const client = new sentcordTS({
-    apikey: key,
-    botid: 'botid'
+const { sentcord } = require('sentcordts-lite')
+const client = new sentcord({
+    apikey: 'Key'
 })
-client.stats('botid', 'servercount', 'shardcount')
+client.PostStats('302857939910131712', 3000, 3)
 ```
