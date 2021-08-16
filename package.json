@@ -25,5 +25,7 @@
     "bot list",
     "sentcord"
   ],
-  "repository": "https://github.com/JDevelo/SentCordTS"
+  "repository": {
+    "url": "https://github.com/JDevelo/SentCordTS.git"
+  }
 }
