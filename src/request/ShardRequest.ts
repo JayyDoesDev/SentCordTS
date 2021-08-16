@@ -10,10 +10,10 @@ export class ShardRequest {
             headers: {
                 "Authorization": key,
                 "Content-Type" : "application/json",
-                body: JSON.stringify({
-                    servers: shards
-                })
-            }
+            },
+            body: JSON.stringify({
+                servers: shards
+            })
         })
     }
 }

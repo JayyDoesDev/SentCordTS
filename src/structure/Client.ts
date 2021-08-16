@@ -14,7 +14,7 @@ export class sentcord {
         this.fetch = require('node-fetch')
     }
 
-    public async PostStats(id: string, servers: number, shards: number): Promise<void | number> {
+    public async PostStats(id: string, servers: number, shards: number): Promise<void> {
         /**
          * @typeof 
          */

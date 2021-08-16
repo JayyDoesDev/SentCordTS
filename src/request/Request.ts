@@ -10,11 +10,11 @@ export class Request {
             headers: {
                 "Authorization": key,
                 "Content-Type" : "application/json",
-                body: JSON.stringify({
-                    servers: servers,
-                    shards: shards,
-                })
-            }
+            },
+            body: JSON.stringify({
+                servers: servers,
+                shards: shards,
+            })
         }).then((res => res.json())).then(data => {
             console.log(data)
         })

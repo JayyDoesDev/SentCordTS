@@ -9,10 +9,10 @@ export class ServerRequest {
             headers: {
                 "Authorization": key,
                 "Content-Type" : "application/json",
-                body: JSON.stringify({
-                    servers: servers
-                })
-            }
+            },
+            body: JSON.stringify({
+                servers: servers
+            })
         })
     }
 }
