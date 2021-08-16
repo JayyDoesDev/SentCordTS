@@ -25,3 +25,8 @@ const client = new sentcord({
 })
 client.PostStats('302857939910131712', 3000, 3)
 ```
+
+# Credits
+Owner Of Sentcord: [SixAiy](https://sixaiy.com)
+
+Contributor: [Colderry](https://colderry.xyz)
