@@ -1,5 +1,13 @@
 # SentCordTS-lite
- SentCordTS-lite is an api wrapper for sentcord to help you post your server/shard stats easily. (TypeScript)
+ SentCordTS-lite is an api wrapper for [sentcord](https://sentcord.com) to help you post your server/shard stats easily. 
+
+ ## Installation
+ **NPM**
+ ```npm i sentcordts-lite```
+ 
+ **YARN**
+ ```yarn add sentcordts-lite```
+
 
  ## TypeScript Setup
  ```typescript
